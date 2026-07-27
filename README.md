@@ -247,12 +247,9 @@ Open the live version:
 ```text
 https://jramo5.github.io/Project-ZIP-Analyzer/
 
-> **Note**
->
-> Opening the project directly with the `file://` protocol is not recommended because browser security restrictions may prevent ZIP processing or ES Module loading.
-
 ---
 
+````
 # Usage
 
 1. Open Project ZIP Analyzer.
