@@ -233,37 +233,19 @@ Project-ZIP-Analyzer/
 
 # Installation
 
-Clone the repository:
+```md
+## Installation
 
-```bash
-git clone https://github.com/Jramo5/Project-ZIP-Analyzer.git
-```
+Project ZIP Analyzer does not require installation, backend services or database configuration.
 
-Move into the project directory:
+The application runs entirely in the browser and can be deployed on any static hosting service.
 
-```bash
-cd Project-ZIP-Analyzer
-```
+### Use Online
 
-Run a local web server.
+Open the live version:
 
-Example using PHP:
-
-```bash
-php -S localhost:8000
-```
-
-Or Python:
-
-```bash
-python -m http.server 8000
-```
-
-Then open:
-
-```
-http://localhost:8000
-```
+```text
+https://jramo5.github.io/Project-ZIP-Analyzer/
 
 > **Note**
 >
