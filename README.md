@@ -221,11 +221,21 @@ Project-ZIP-Analyzer/
     │   └── style.css
     │
     ├── js/
-    │   ├── analyzer.js
+    │   ├── architectureDetector.js
+    │   ├── smartAnalyzer.js
+    │   ├── charts.js
+    │   ├── componentDetector.js
+    │   ├── summaryBuilder.js
+    │   ├── qualityAnalyzer.js 
+    │   ├── projectTypeDetector.js
+    │   ├── frameworkDetector.js
+    │   ├── tree.js
     │   ├── utils.js
-    │   ├── ui.js
-    │   └── main.js
-    │
+    │   ├── recommendationEngine.js
+    │   ├── main.js
+    │   ├── analyzer.js
+    │   ├── securityAnalyzer.js
+    │   ├── json.js
     └── vendor/
 ```
 
