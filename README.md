@@ -1,89 +1,103 @@
-![Version](https://img.shields.io/badge/version-1.0.0-success)
+# ![Version](https://img.shields.io/badge/version-1.1.0-success)
+
 ![Responsive](https://img.shields.io/badge/Responsive-Yes-brightgreen)
-![Vanilla JS](https://img.shields.io/badge/JavaScript-Vanilla-yellow)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES2022-yellow)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3-purple)
 ![License](https://img.shields.io/badge/License-PolyForm%20Noncommercial%201.0.0-blue)
 ![Made with Love](https://img.shields.io/badge/Made%20with-%E2%9D%A4-red)
 
 # Project ZIP Analyzer
 
-A modern, responsive and intelligent web application for analyzing compressed project files (`.zip`) directly in the browser.
+**Project ZIP Analyzer** is a modern web application that analyzes compressed software projects (`.zip`) entirely inside your browser.
 
-Project ZIP Analyzer inspects the structure of software projects, detects technologies, frameworks, dependencies, architecture, security indicators and generates a comprehensive JSON report without uploading any data to a server.
+It automatically inspects the project structure, detects programming languages, frameworks, package managers, dependencies, entry points, security indicators, and generates a comprehensive JSON report without uploading your files to any server.
 
 ---
 
-## Live Demo
+## 🌐 Live Demo
 
-🌐 **GitHub Pages**
+**GitHub Pages**
 
 https://jramo5.github.io/Project-ZIP-Analyzer/
 
 ---
 
-## Repository
+## 📦 Repository
 
 https://github.com/Jramo5/Project-ZIP-Analyzer
 
 ---
 
-## Features
+# Features
 
 * Analyze ZIP projects entirely in the browser.
+* 100% client-side processing.
 * No server required.
 * Drag & Drop support.
-* Generates a complete JSON project manifest.
-* Detects programming languages automatically.
-* Detects frameworks and technologies.
-* Detects package managers and dependencies.
-* Identifies project entry points.
-* Generates a complete project tree.
-* Calculates project statistics.
-* Smart project analysis.
+* Automatic project inspection.
+* JSON report generation.
+* Programming language detection.
+* Framework detection.
+* Package manager detection.
+* Dependency extraction.
+* Entry point detection.
+* Project architecture inference.
 * Security inspection.
-* Quality scoring.
-* Automatic recommendations.
-* Interactive charts.
+* Interactive project tree.
+* File statistics.
+* Language distribution charts.
 * JSON syntax highlighting.
 * Copy JSON to clipboard.
-* Download generated analysis.
+* Download analysis report.
 * Responsive interface.
-* Dark mode UI.
-* Built with pure HTML, CSS and JavaScript.
+* Dark Mode.
+* Built with modern Vanilla JavaScript.
 
 ---
 
-## Intelligent Analysis
+# Intelligent Analysis
 
-The application performs automatic project inspection and attempts to identify:
+The analyzer automatically identifies:
 
-### Project Type
+## Programming Languages
 
-* Web Application
-* Backend
-* Frontend
-* Full Stack
-* REST API
-* SDK
-* Library
-* CLI
-* Installer
-* Docker Project
-* Static Website
+* PHP
+* JavaScript
+* TypeScript
+* HTML
+* CSS / SCSS
+* Python
+* Go
+* Rust
+* Java
+* C#
+* C++
+* SQL
+* XML
+* YAML
+* Markdown
+* Shell
+* Dockerfile
+* And many more...
 
 ---
 
-### Framework Detection
+## Framework Detection
 
-Supports automatic detection of technologies such as:
+Supports automatic detection of projects built with:
 
 * Laravel
 * Symfony
 * CodeIgniter
+* CakePHP
 * WordPress
+* Drupal
+* Joomla
 * React
 * Vue
 * Angular
 * Next.js
+* Nuxt
 * Express
 * NestJS
 * Flask
@@ -91,77 +105,89 @@ Supports automatic detection of technologies such as:
 * FastAPI
 * Spring Boot
 * ASP.NET
-* Bootstrap
-* Tailwind CSS
 
 ---
 
-### Architecture Detection
+## Package Managers
+
+Automatically detects:
+
+* Composer
+* npm
+* Yarn
+* pnpm
+* Bun
+* Cargo
+* Go Modules
+* Maven
+* Gradle
+* Poetry
+* Pip
+
+---
+
+## Project Classification
 
 Attempts to identify:
 
-* MVC
-* HMVC
-* Clean Architecture
-* Hexagonal Architecture
-* Domain Driven Design (DDD)
-* SPA
-* SSR
-* Monolithic Applications
-* Modular Projects
-* API First
+* Frontend
+* Backend
+* Full Stack
+* SDK
+* Library
+* REST API
+* CLI Application
+* Static Website
 
 ---
 
-### Security Inspection
+## Architecture Detection
 
-Detects potentially sensitive files such as:
+Detects common software structures such as:
 
-* .env
-* .env.example
-* Certificates
+* MVC
+* REST API
+* SPA
+* Modular Applications
+* Backend Services
+* Frontend Applications
+
+---
+
+## Security Inspection
+
+Searches for potentially sensitive resources including:
+
+* `.env`
+* `.env.example`
 * Private keys
-* SQL backups
-* Vendor directories
-* node_modules
+* Certificates
 * Hidden files
+* `vendor`
+* `node_modules`
+* Sensitive filenames
 * Configuration files
 
-Also generates a security risk assessment.
+A security summary is generated as part of the analysis.
 
 ---
 
-### Quality Analysis
+# Generated Report
 
-Calculates indicators such as:
-
-* Project organization
-* Maintainability
-* Documentation
-* Configuration
-* Modularity
-* Overall project quality score
-
----
-
-## Generated Report
-
-The analyzer produces a structured JSON report containing sections similar to:
+Each analysis produces a structured JSON report similar to:
 
 ```json
 {
   "metadata": {},
-  "summary": {},
   "statistics": {},
   "languages": {},
   "frameworks": [],
+  "packageManagers": [],
   "dependencies": {},
-  "components": {},
   "security": {},
   "entryPoints": [],
   "analysis": {},
-  "recommendations": [],
-  "quality": {},
+  "components": {},
   "fileList": [],
   "structure": {}
 }
@@ -169,44 +195,43 @@ The analyzer produces a structured JSON report containing sections similar to:
 
 ---
 
-## Technologies
+# Technologies
 
 * HTML5
 * CSS3
 * Vanilla JavaScript (ES2022)
 * Bootstrap 5
+* Bootstrap Icons
 * JSZip
 * Chart.js
-* Bootstrap Icons
 
 ---
 
-## Project Structure
+# Project Structure
 
 ```text
 Project-ZIP-Analyzer/
 │
 ├── index.html
-├── assets/
-│   ├── css/
-│   ├── js/
-│   │   ├── analyzer.js
-│   │   ├── smartAnalyzer.js
-│   │   ├── frameworkDetector.js
-│   │   ├── architectureDetector.js
-│   │   ├── securityAnalyzer.js
-│   │   ├── qualityAnalyzer.js
-│   │   ├── recommendationEngine.js
-│   │   ├── summaryBuilder.js
-│   │   └── ...
-│   └── icons/
 ├── README.md
-└── LICENSE
+├── LICENSE
+│
+└── assets/
+    ├── css/
+    │   └── style.css
+    │
+    ├── js/
+    │   ├── analyzer.js
+    │   ├── utils.js
+    │   ├── ui.js
+    │   └── main.js
+    │
+    └── vendor/
 ```
 
 ---
 
-## Installation
+# Installation
 
 Clone the repository:
 
@@ -214,15 +239,21 @@ Clone the repository:
 git clone https://github.com/Jramo5/Project-ZIP-Analyzer.git
 ```
 
-Open the project using a local web server.
+Move into the project directory:
 
-Examples:
+```bash
+cd Project-ZIP-Analyzer
+```
+
+Run a local web server.
+
+Example using PHP:
 
 ```bash
 php -S localhost:8000
 ```
 
-or
+Or Python:
 
 ```bash
 python -m http.server 8000
@@ -230,54 +261,72 @@ python -m http.server 8000
 
 Then open:
 
-```text
+```
 http://localhost:8000
 ```
 
-> **Note:** Opening `index.html` directly with the `file://` protocol is not recommended because some browser security restrictions may prevent certain features from working correctly.
+> **Note**
+>
+> Opening the project directly with the `file://` protocol is not recommended because browser security restrictions may prevent ZIP processing or ES Module loading.
 
 ---
 
-## Usage
+# Usage
 
 1. Open Project ZIP Analyzer.
-2. Drag & Drop or select a ZIP project.
-3. Wait for the analysis to complete.
+2. Drag & Drop or choose a ZIP project.
+3. Wait while the project is analyzed.
 4. Explore the generated dashboard.
-5. Review statistics, structure, dependencies and security.
-6. Inspect the generated JSON.
-7. Export or copy the analysis.
+5. Inspect statistics, technologies and project structure.
+6. View or copy the generated JSON.
+7. Download the report if needed.
 
 ---
 
-## Why Project ZIP Analyzer?
+# Why Project ZIP Analyzer?
 
-Project ZIP Analyzer was created to provide developers, auditors and software architects with a lightweight tool capable of understanding the internal structure of software projects without requiring installation or server-side processing.
+Project ZIP Analyzer was created to help developers, software architects, security researchers and technical auditors quickly understand the internal structure of software projects.
 
-All analysis is performed locally in the browser, ensuring privacy and fast execution.
-
----
-
-## Roadmap
-
-Future planned features include:
-
-* Git repository analysis.
-* PDF report export.
-* Project comparison.
-* Duplicate file detection.
-* License compatibility checker.
-* Dependency vulnerability inspection.
-* AI-assisted project summary.
-* Plugin system for custom analyzers.
+Since every analysis is performed locally inside the browser, no project files leave your computer, making the application privacy-friendly and extremely fast.
 
 ---
 
-## License
+# Browser Support
 
-This project is licensed under the PolyForm Noncommercial License 1.0.0.
+Compatible with modern browsers:
 
-You are permitted to:
+* Google Chrome
+* Microsoft Edge
+* Mozilla Firefox
+* Brave
+* Opera
+
+Safari support may vary depending on the browser version.
+
+---
+
+# Roadmap
+
+Future planned features:
+
+* Git repository analysis
+* PDF report export
+* Project comparison
+* Duplicate file detection
+* Dependency vulnerability scanner
+* License compatibility checker
+* Plugin architecture
+* AI-powered project summaries
+* Project complexity metrics
+* Dependency graphs
+
+---
+
+# License
+
+This project is licensed under the **PolyForm Noncommercial License 1.0.0**.
+
+You may:
 
 * Use the software for personal purposes.
 * Use the software for educational purposes.
@@ -285,28 +334,20 @@ You are permitted to:
 * Modify the source code.
 * Share copies of the software.
 
-You are NOT permitted to:
+You may **NOT**:
 
 * Sell this software.
-* Include this software in paid products.
-* Offer this software as a paid service.
-* Use this software directly or indirectly for commercial purposes.
-* Remove or alter copyright notices.
+* Include it in commercial products.
+* Offer it as a paid service.
+* Use it directly or indirectly for commercial purposes.
+* Remove copyright notices.
 * Remove author attribution.
 
-Any modified or redistributed version must retain:
-
-* Original copyright notices.
-* Original author attribution.
-* License information.
-
-Commercial use requires prior written permission from the copyright holder.
-
-For commercial licensing inquiries, please contact the author.
+Commercial licensing requires prior written permission from the copyright holder.
 
 ---
 
-## Copyright
+# Copyright
 
 © 2026 Jorge Ramos
 
@@ -314,12 +355,14 @@ All rights reserved except as granted under the PolyForm Noncommercial License 1
 
 ---
 
-## Author
+# Author
 
 **Jorge Ramos**
 
-GitHub:
+GitHub
 
 https://github.com/Jramo5
+
+---
 
 Made with ❤️ for developers, software architects, security researchers and open-source enthusiasts.
